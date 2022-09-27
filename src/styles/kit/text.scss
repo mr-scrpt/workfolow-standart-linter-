@@ -1,0 +1,15 @@
+.text {
+  &__paragraph {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    @include bp994-block {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__b600 {
+    font-weight: 600;
+  }
+}

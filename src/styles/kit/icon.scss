@@ -1,0 +1,35 @@
+.icon {
+  min-width: 1em;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: "\00A0";
+}
+
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em;
+  vertical-align: middle;
+}
+/* Example png */
+.icon.icon_png {
+  background-image: url("../img/icons/icon_home.png");
+  width: 43px;
+  height: 43px;
+}
+
+/* Example svg */
+.icon.icon_svg {
+  mask-image: url("../img/icons/icon_burger.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background: $color_dark;
+  width: 21px;
+  height: 11px;
+}

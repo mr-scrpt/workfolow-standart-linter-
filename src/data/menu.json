@@ -1,0 +1,24 @@
+{
+	"menu_main": [
+		{
+			"name": "Home",
+			"icon": "icon_home",
+			"href": "/"
+		},
+		{
+			"name": "About Us",
+			"icon": "icon_about",
+			"href": "/about.html"
+		},
+		{
+			"name": "Privacy Policy",
+			"icon": "icon_policy",
+			"href": "/policy.html"
+		},
+		{
+			"name": "Contact Us",
+			"icon": "icon_contact",
+			"href": "contact.html"
+		}
+	]	
+}

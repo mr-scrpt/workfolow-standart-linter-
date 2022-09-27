@@ -1,0 +1,10 @@
+<div class="logo {{inject.parentClass}}">
+  <a href="/" class="logo__inner">
+  {%if inject.logoText %}
+    <div class="logo__tex">{{inject.logoText}}</div>
+  {% else %}
+    <img class="logo__img img" src="./img/logo/logo.png" alt="logo"/>
+  {% endif %}
+  
+	</a>
+</div>

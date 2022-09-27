@@ -1,0 +1,46 @@
+.block-s {
+  &__body {
+    position: absolute;
+
+    transform: translateX(-99999px);
+    z-index: 3;
+
+    @include bp994-block() {
+      transform: translateX(0);
+      position: relative;
+    }
+  }
+  &__controller {
+    display: flex;
+    @include bp994-block() {
+      display: none;
+    }
+  }
+
+  &_open {
+    .block-s__body {
+      /*margin-right: -15px;*/
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      animation: slideMenuOpen 0.8s forwards;
+    }
+  }
+
+  &_close {
+    .block-s__body {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      animation: slideMenuClose 0.8s forwards;
+      @include bp994-block() {
+        transform: translateX(0);
+        animation: none;
+      }
+    }
+  }
+}

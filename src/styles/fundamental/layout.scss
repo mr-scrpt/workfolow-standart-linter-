@@ -1,0 +1,18 @@
+.layout {
+  &__inner {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100%;
+  }
+
+  &__wrap {
+    @include wrapper;
+  }
+
+  &__full {
+  }
+}
