@@ -1,0 +1,19 @@
+<section class="section page__section {{ inject.sectionClass }}"
+         id="{{ inject.scrollTo }}">
+    <div class="section__inner {{ inject.sectionInner }}">
+        <div class="layout__{{ inject.wrapper }} layout__wrap">
+            {% if inject.sectionTitle %}
+                <div class="section__title title title_main">
+                    <div class="title__text">{{ inject.sectionTitle }}</div>
+                </div>
+            {% endif %}
+            {% block section %}
+            {% endblock section %}
+            {% if inject.deco %}
+                <div class="section__deco">
+                    <img src="/img/icons/icon__flower.svg" alt="" class="deco__pattern img" />
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

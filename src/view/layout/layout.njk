@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="ru">
+    {% include "../component/head.njk" %}
+    <body class="{{ inject.layoutClass }}">
+        {#  {% include "blocks/common/debug.njk" %} #}
+        {% block main %}
+        {% endblock main %}
+        {% include "../component/script.njk" %}
+    </body>
+</html>

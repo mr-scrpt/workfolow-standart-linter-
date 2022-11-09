@@ -1,0 +1,41 @@
+.icon {
+  display: inline-block;
+
+  min-width: 1em;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+.icon:empty:after {
+  visibility: hidden;
+
+  content: '\00A0';
+}
+
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em;
+
+  vertical-align: middle;
+}
+/* Icon svg example */
+/* Не задаются размеры - блок icon не используется отдельно */
+/* Используется в качестве вспомогательного, декоративного элемента */
+/* Размеры получает через блок родителя, например button */
+
+.icon.icon_insta {
+  background-image: url('../img/sprite/icon.svg#icon_insta');
+}
+// .icon.icon_insta {
+//   background-image: url('../img/icon_insta.svg');
+// }
+.icon.icon_viber {
+  background-image: url('../img/sprite/icon.svg#icon_viber');
+}
+.icon.icon_visa {
+  background-image: url('../img/sprite/icon.svg#icon_visa');
+}

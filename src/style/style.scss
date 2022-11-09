@@ -1,0 +1,49 @@
+/* Библиотеки */
+@import './lib/smart-grid';
+
+/* INIT */
+@import './preset/animation';
+@import './preset/font';
+@import './preset/mixin';
+@import './preset/preset';
+@import './preset/reset';
+
+/* Фундоментальные Блоки */
+@import './fundamental/footer';
+@import './fundamental/header';
+@import './fundamental/kit';
+@import './fundamental/layout';
+@import './fundamental/page';
+
+/* Base */
+@import './base/button';
+@import './base/checkbox';
+@import './base/deco';
+@import './base/icon';
+@import './base/img';
+@import './base/input';
+@import './base/label';
+@import './base/link';
+@import './base/logo';
+@import './base/relative-box';
+@import './base/text';
+@import './base/textarea';
+@import './base/title';
+
+/* Навигация */
+
+/* Блоки Верстки */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  -webbase-overflow-scrolling: touch;
+}

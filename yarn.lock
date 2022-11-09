@@ -4251,10 +4251,10 @@ gulp-file-include@latest:
     through2 "^4.0.2"
     vinyl "^2.2.1"
 
-gulp-fonter@latest:
+gulp-fonter-2@^0.3.0:
   version "0.3.0"
-  resolved "https://registry.yarnpkg.com/gulp-fonter/-/gulp-fonter-0.3.0.tgz#7cfa04fda7a7fc74b703e27ee7d09fa4ded3e69a"
-  integrity sha512-eaMw8yexRfe9X1UmMOLFF+2Lp/FUUrkdvRTxBm35tkdj3QM2KJc1EcKELrlj9qoHrECm/yun9KCjIyls3Qh2Jw==
+  resolved "https://registry.yarnpkg.com/gulp-fonter-2/-/gulp-fonter-2-0.3.0.tgz#9c5089b7d16dd9fb736e2b14377158f3245167e5"
+  integrity sha512-EW7HFlNuNc3pNJ8DiSJYwP/XNYXB2r4EJUXgJc8/iQm+LDs0uZF/7avfQmT57fJEhhAEbDNTQwA5skcl3Gq8Tg==
   dependencies:
     fonteditor-core "^1.0.5"
 
@@ -5457,7 +5457,7 @@ jest-worker@^27.4.5, jest-worker@^27.5.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jquery@^3.6.0:
+jquery@^3.6.0, jquery@^3.6.1:
   version "3.6.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.1.tgz#fab0408f8b45fc19f956205773b62b292c147a16"
   integrity sha512-opJeO4nCucVnsjiXOE+/PcCgYw9Gwpvs/a6B1LL/lQhwWwpbVEVYDZ1FokFr8PRc7ghYlrFPuyHuiiDNTQxmcw==
@@ -8404,6 +8404,13 @@ shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
+
+showctrl@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/showctrl/-/showctrl-1.0.3.tgz#3a79f50d98b788f825c1a5f20d997f12232e4715"
+  integrity sha512-PSPDZAAAlnwOvAFG5XSnU7Vg5skEUfQrD0cupFbDKs6kGKU+sMoE/yV15lBq3aKU2od04JF2IvDVlWVrTzsNBA==
+  dependencies:
+    jquery "^3.6.1"
 
 side-channel@^1.0.4:
   version "1.0.4"

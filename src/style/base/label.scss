@@ -1,0 +1,72 @@
+.label {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    &_flat {
+      align-items: flex-start;
+    }
+  }
+
+  &__box {
+    display: flex;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__input {
+    flex-grow: 1;
+
+    max-width: 100%;
+  }
+  &__textarea {
+    flex-grow: 1;
+  }
+  &__radio {
+    width: 100%;
+  }
+
+  &__select {
+    flex-grow: 1;
+
+    max-width: 100%;
+  }
+}
+
+.label.label_size_s {
+  & .label__box {
+    min-width: 130px;
+  }
+  & .label__text {
+    font-size: 13px;
+  }
+}
+
+.label.label_size_m {
+  & .label__box {
+    min-width: 150px;
+  }
+  & .label__text {
+    font-size: 14px;
+  }
+}
+
+.label.label_size_l {
+  & .label__box {
+    min-width: 165px;
+  }
+  & .label__text {
+    font-size: 16px;
+  }
+}
+
+.label.label_size_xl {
+  & .label__box {
+    min-width: 200px;
+  }
+  & .label__text {
+    font-size: 20px;
+  }
+}

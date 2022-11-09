@@ -1,1 +1,1 @@
-// import "./modules/link.js";
+import './module/adaptive.js'

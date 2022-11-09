@@ -1,0 +1,190 @@
+.button {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+
+  outline: 0;
+  touch-action: manipulation;
+
+  & .button__text {
+    position: relative;
+
+    display: inline-block;
+    overflow: hidden;
+
+    vertical-align: top;
+  }
+
+  /* HOVER */
+  &:hover {
+    cursor: pointer;
+  }
+}
+/* View */
+.button.button_view_primary {
+  // border: 2px solid blue;
+  background: blue;
+
+  & .button__text {
+    color: white;
+  }
+
+  &:hover {
+    background: lightblue;
+  }
+  @include ts(background);
+}
+.button.button_view_secondary {
+  border: 2px solid green;
+  background: yellow;
+
+  & .button__text {
+    color: green;
+    @include ts(color);
+  }
+
+  &:hover {
+    border-color: red;
+    & .button__text {
+      color: red;
+    }
+  }
+  @include ts(border-color);
+}
+
+.button.button_view_tertiary {
+  border: 2px solid blue;
+  background: gray;
+
+  & .button__text {
+    color: white;
+    @include ts(color);
+  }
+
+  &:hover {
+    background: blue;
+    & .button__text {
+      color: yellow;
+    }
+  }
+  @include ts(background);
+}
+
+.button.button_view_transparent {
+  border: 2px solid white;
+  background: transparent;
+
+  & .button__text {
+    color: white;
+    @include ts(color);
+  }
+
+  &:hover {
+    border-color: blue;
+    & .button__text {
+      color: blue;
+    }
+  }
+  @include ts(border);
+}
+/* View END*/
+
+/* With icon */
+/* Ширина иконок задается от line-height размера кнопки */
+/* Получаме квадрат, например line-height: 32px, тогда и width: 32px*/
+
+.button .icon + .button__text {
+  margin-left: 0;
+}
+
+.button.button_size_s .icon {
+  width: 24px;
+  background-size: contain;
+}
+
+.button.button_size_m .icon {
+  width: 28px;
+  background-size: contain;
+}
+
+.button.button_size_l .icon {
+  width: 32px;
+  // height: 40px;
+}
+
+.button.button_size_xl .icon {
+  width: 38px;
+  // height: 38px;
+}
+/* With icon END*/
+
+/* Модификаторы */
+.button_width_available {
+  width: 100%;
+}
+
+/* Модификаторы КОНЕЦ */
+
+/*Размеры кнопок*/
+
+/*S - Начало*/
+.button.button_size_s {
+  border-radius: 4px;
+
+  font-size: 13px;
+
+  line-height: 24px;
+}
+.button_size_s .button__text {
+  margin: 0 10px;
+}
+/*S - КОНЕЦ*/
+
+/*M - Начало*/
+.button.button_size_m {
+  border-radius: 6px;
+
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.button_size_m .button__text {
+  margin: 0 13px;
+}
+/*M - КОНЕЦ*/
+
+/*L - Начало*/
+.button.button_size_l {
+  border-radius: 8px;
+
+  font-size: 15px;
+  line-height: 32px;
+}
+.button_size_l .button__text {
+  margin: 0 15px;
+}
+/*L - КОНЕЦ*/
+
+/*XL - Начало*/
+.button.button_size_xl {
+  border-radius: 10px;
+
+  font-size: 18px;
+  line-height: 38px;
+}
+
+.button_size_xl .button__text {
+  margin: 0 18px;
+}
+/*XL - КОНЕЦ*/

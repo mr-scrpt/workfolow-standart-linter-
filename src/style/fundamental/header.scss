@@ -1,0 +1,13 @@
+.header {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+  }
+  &__menu {
+    width: 100%;
+    background-color: yellow;
+  }
+}

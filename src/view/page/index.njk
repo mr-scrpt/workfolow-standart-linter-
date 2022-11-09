@@ -1,0 +1,14 @@
+{% set inject = { layoutClass: "page page_theme layout deco"} %}
+{% extends "layout/layout.njk" %}
+{% block main %}
+    <!--  Header -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: ''
+    } %}
+    {% include "section/header-section.njk" %}
+    <!--  Header END-->
+    <!--  Footer -->
+    {% include "component/footer/footer.njk" %}
+    <!--  Footer END-->
+{% endblock main %}

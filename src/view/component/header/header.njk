@@ -1,0 +1,11 @@
+<div class="header">
+    <div class="header__inner">
+        <div class="header__logo">{% include "blocks/logo/logo.njk" %}</div>
+        {%
+        set inject = {
+        parentClass: "header__menu"
+        }
+        %}
+        {% include "blocks/menu/menu-simple.njk" %}
+    </div>
+</div>
